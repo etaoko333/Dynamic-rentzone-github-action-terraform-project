@@ -1,6 +1,6 @@
 # environment variables
 region       = "us-east-1"
-project_name = "rentzone"
+project_name = "nestapp"
 environment  = "demo"
 
 # vpc variables
@@ -31,7 +31,7 @@ env_file_name        = "env-variables-file.env"
 
 # ecs variables
 architecture = "X86_64"
-image_name   = "rentzone-app"
+image_name   = "nestapp"
 image_tag    = "latest"
 
 # route-53 variables

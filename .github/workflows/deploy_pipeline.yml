@@ -147,7 +147,7 @@ jobs:
     needs: 
       - configure_aws_credentials
       - deploy_aws_infrastructure
-    if: need.deploy_aws_infrastructure.output.terraform_action != 'destroy'
+    if: needs.deploy_aws_infrastructure.output.terraform_action != 'destroy'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

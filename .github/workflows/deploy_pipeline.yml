@@ -186,7 +186,7 @@ jobs:
             echo "runner-running=true" >> $GITHUB_ENV
           else
             echo "runner-running=false" >> $GITHUB_ENV
-          if
+          fi
 
       - name: Start EC2 runner
         if: env.runner-running != 'true'

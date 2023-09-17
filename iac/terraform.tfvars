@@ -1,6 +1,6 @@
 # environment variables
 region       = "us-east-1"
-project_name = "rentzone"
+project_name = "nestapp"
 environment  = "demo"
 
 # vpc variables

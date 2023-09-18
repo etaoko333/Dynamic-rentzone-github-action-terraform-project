@@ -423,7 +423,7 @@ jobs:
         env:
           ECS_CLUSTER_NAME: ${{ needs.deploy_aws_infrastructure.outputs.ecs_cluster_name }}
           ECS_SERVICE_NAME: ${{ needs.deploy_aws_infrastructure.outputs.ecs_service_name }}
-          TD_NAME: ${{ needs.create_td_revision.outputs.new_td_revision }}
+          TD_NAME: ${{ needs.deploy_aws_infrastructure.outputs.task_definition_name }}
         run: |
           aws ecs update-service --cluster ${{ env.ECS_CLUSTER_NAME }} --service ${{ env.ECS_SERVICE_NAME }} --task-definition ${{ env.TD_NAME }}:${{ needs.create_td_revision.outputs.new_td_revision }} --force-new-deployment
 

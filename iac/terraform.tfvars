@@ -26,7 +26,7 @@ domain_name       = "eta-oko.com"
 alternative_names = "*.eta-oko.com"
 
 # s3 variables
-env_file_bucket_name = "sola-rentzone-terraform-env-file"
+env_file_bucket_name = "fashionova-bucket"
 env_file_name        = "env-variables-file.env"
 
 # ecs variables

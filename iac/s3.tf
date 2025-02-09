@@ -1,7 +1,7 @@
-resource "aws_s3_bucket" "dynamic-website-project" {
-  bucket = "fashionova-bucket"
-
-  lifecycle {
-    prevent_destroy = true  # Optional: Prevent accidental deletion
+terraform {
+  backend "s3" {
+    bucket = "dynamic-website-project"  # Use the correct bucket name
+    key    = "terraform/state"           # Path to your state file
+    region = "us-west-1"                 # Ensure this matches the region of your bucket
   }
 }

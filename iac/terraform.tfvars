@@ -25,12 +25,6 @@ publicly_accessible          = "false"
 domain_name       = "eta-oko.com"
 alternative_names = "*.eta-oko.com"
 
-# s3 variables
-resource "aws_s3_object" "upload_env_file" {
-  bucket = aws_s3_bucket.fashionova_bucket.id
-  key    = "your_env_file_name"  # Change this to your desired key name in S3
-  source = "./your_env_file_name" # Path to your local file
-}
 # ecs variables
 architecture = "X86_64"
 image_name   = "rentzone"

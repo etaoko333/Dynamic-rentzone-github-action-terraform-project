@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket         = "rentzone-github-action-state-file"
     key            = "rentzone-app/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "us-west-1"
     dynamodb_table = "terraform-state-lock-nestapp"
   }
 }

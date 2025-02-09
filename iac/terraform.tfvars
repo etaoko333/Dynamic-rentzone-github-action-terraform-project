@@ -1,5 +1,5 @@
 # environment variables
-region       = "us-east-1"
+region       = "us-west-1"
 project_name = "rentzone"
 environment  = "demo"
 
@@ -22,11 +22,11 @@ database_instance_class      = "db.t2.micro"
 publicly_accessible          = "false"
 
 # acm variables
-domain_name       = "belloafeez.com"
-alternative_names = "*.belloafeez.com"
+domain_name       = "eta-oko.com"
+alternative_names = "*.eta-oko.com"
 
 # s3 variables
-env_file_bucket_name = "bello-rentzone-terraform-env-file"
+env_file_bucket_name = "sola-rentzone-terraform-env-file"
 env_file_name        = "env-variables-file.env"
 
 # ecs variables

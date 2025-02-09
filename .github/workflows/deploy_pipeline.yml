@@ -9,7 +9,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   AWS_REGION: us-west-1
   TERRAFORM_ACTION: destroy
-  GITHUB_USERNAME: werkmanne
+  GITHUB_USERNAME: etaoko333
   REPOSITORY_NAME: application-codes
   WEB_FILE_ZIP: rentzone.zip
   WEB_FILE_UNZIP: rentzone

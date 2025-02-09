@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "fashionova_bucket" {
+resource "aws_s3_bucket" "dynamic-website-project" {
   bucket = "fashionova-bucket"
 
   lifecycle {
